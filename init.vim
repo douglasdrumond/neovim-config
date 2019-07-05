@@ -11,6 +11,12 @@ call minpac#add('pangloss/vim-javascript')
 " HTML
 call minpac#add('mattn/emmet-vim')
 
+" Code completion
+call minpac#add('Shougo/deoplete.nvim')
+let g:deoplete#enable_at_startup = 1
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
 " Commands and shortcuts
   " Plugin management
   command! PackUpdate call minpac#update()
