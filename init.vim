@@ -19,6 +19,9 @@ inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 call minpac#add('tpope/vim-surround')
 
+call minpac#add('scrooloose/nerdTree')
+nmap <F3> :NERDTreeToggle<CR>
+
 " Commands and shortcuts
   " Plugin management
   command! PackUpdate call minpac#update()
