@@ -8,6 +8,9 @@ call minpac#add('romainl/Apprentice')
 call minpac#add('mxw/vim-jsx')
 call minpac#add('pangloss/vim-javascript')
 
+" HTML
+call minpac#add('mattn/emmet-vim')
+
 " Commands and shortcuts
   " Plugin management
   command! PackUpdate call minpac#update()
