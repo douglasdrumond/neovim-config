@@ -1,4 +1,4 @@
-packadd minpac
+packadd minpac " http://vimcasts.org/episodes/minpac/
 call minpac#init()
 " Color scheme
 call minpac#add('romainl/Apprentice')
