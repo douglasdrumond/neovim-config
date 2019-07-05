@@ -1,5 +1,10 @@
 packadd minpac " http://vimcasts.org/episodes/minpac/
 call minpac#init()
+
+" Add minpac so it cak update itself
+" minpac must have {'type': 'opt'} so that it can be loaded with `packadd`.
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+
 " Color scheme
 call minpac#add('romainl/Apprentice')
 "'srcery-colors/srcery-vim'
