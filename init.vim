@@ -73,6 +73,16 @@ call minpac#add('sheerun/vim-polyglot')
 call minpac#add('ludovicchabant/vim-gutentags')
 let g:gutentags_cache_dir = '~/.tags_cache'
 
+" Ruby and Rails
+call minpac#add('tpope/vim-rails')
+call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('tpope/vim-cucumber')
+call minpac#add('tpope/vim-dotenv')
+
+call minpac#add('tpope/vim-commentary')
+
+call minpac#add('tpope/vim-haml')
+
 call minpac#add('tpope/vim-surround')
 
 call minpac#add('scrooloose/nerdTree')
