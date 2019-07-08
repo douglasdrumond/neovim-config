@@ -9,6 +9,9 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('romainl/Apprentice')
 "'srcery-colors/srcery-vim'
 
+call minpac#add('vim-airline/vim-airline')
+call minpac#add('vim-airline/vim-airline-themes')
+
 " Javascript
 call minpac#add('mxw/vim-jsx')
 call minpac#add('pangloss/vim-javascript')
