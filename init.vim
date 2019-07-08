@@ -89,6 +89,9 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-rhubarb')
 
+" Database manipulation
+call minpac#add('tpope/vim-dadbod')
+
 call minpac#add('scrooloose/nerdTree')
 nmap <F3> :NERDTreeToggle<CR>
 
