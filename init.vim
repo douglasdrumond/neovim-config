@@ -62,6 +62,17 @@ call minpac#add('neomake/neomake')
         \ 'postprocess': function('NeomakeCredoErrorType')
         \ }
 
+call minpac#add('c-brenn/phoenix.vim')
+call minpac#add('tpope/vim-projectionist') " required for some navigation features
+
+call minpac#add('slashmili/alchemist.vim')
+let g:alchemist_tag_disable = 1
+
+call minpac#add('sheerun/vim-polyglot')
+
+call minpac#add('ludovicchabant/vim-gutentags')
+let g:gutentags_cache_dir = '~/.tags_cache'
+
 call minpac#add('tpope/vim-surround')
 
 call minpac#add('scrooloose/nerdTree')
