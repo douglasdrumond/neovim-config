@@ -70,8 +70,8 @@ let g:alchemist_tag_disable = 1
 
 call minpac#add('sheerun/vim-polyglot')
 
-call minpac#add('ludovicchabant/vim-gutentags')
-let g:gutentags_cache_dir = '~/.tags_cache'
+" call minpac#add('ludovicchabant/vim-gutentags')
+" let g:gutentags_cache_dir = '~/.tags_cache'
 
 " Ruby and Rails
 call minpac#add('tpope/vim-rails')
