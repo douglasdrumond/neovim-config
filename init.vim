@@ -104,6 +104,9 @@ nmap <F3> :NERDTreeToggle<CR>
 " Movement
 call minpac#add('easymotion/vim-easymotion')
 
+" Fuzzy finder
+call minpac#add('junegunn/fzf.vim')
+
 " Commands and shortcuts
   " Plugin management
   command! PackUpdate call minpac#update()
