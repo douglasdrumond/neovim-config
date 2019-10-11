@@ -30,6 +30,7 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 call minpac#add('tbodt/deoplete-tabnine', {'do': {-> system('./install.sh')}})
+call minpac#add('Shougo/neco-vim')
 
 call minpac#add('neomake/neomake')
 
