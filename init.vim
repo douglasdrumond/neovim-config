@@ -19,6 +19,10 @@ call minpac#add('pangloss/vim-javascript')
 " HTML
 call minpac#add('mattn/emmet-vim')
 
+" Undo
+call minpac#add('sjl/gundo.vim')
+nnoremap <F4> :GundoToggle<CR>
+
 " Code completion
 call minpac#add('Shougo/deoplete.nvim')
 let g:deoplete#enable_at_startup = 1
