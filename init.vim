@@ -109,6 +109,8 @@ call minpac#add('easymotion/vim-easymotion')
 " Fuzzy finder
 call minpac#add('junegunn/fzf.vim')
 
+call minpac#add('godlygeek/tabular')
+
 " Commands and shortcuts
   " Plugin management
   command! PackUpdate call minpac#update()
