@@ -25,6 +25,8 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
+call minpac#add('tbodt/deoplete-tabnine', {'do': {-> system('./install.sh')}})
+
 call minpac#add('neomake/neomake')
 
   " https://www.smoothterminal.com/articles/neovim-for-elixir
