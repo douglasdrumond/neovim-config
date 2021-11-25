@@ -151,3 +151,7 @@ set nobackup
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
+" Finding files - Search down into subfolders
+set path+=**
+set wildignore+=*/node_modules/*
+
