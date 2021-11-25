@@ -116,6 +116,8 @@ call minpac#add('junegunn/fzf.vim')
 
 call minpac#add('godlygeek/tabular')
 
+call minpac#add('neovim/nvim-lspconfig')
+
 " Commands and shortcuts
 " Plugin management
 command! PackUpdate call minpac#update()
