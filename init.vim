@@ -117,12 +117,12 @@ call minpac#add('junegunn/fzf.vim')
 call minpac#add('godlygeek/tabular')
 
 " Commands and shortcuts
-  " Plugin management
-  command! PackUpdate call minpac#update()
-  command! PackClean call minpac#clean()
+" Plugin management
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
 
-  " File management
-  nnoremap <C-p> :<C-u>FZF<CR>
+" File management
+nnoremap <C-p> :<C-u>FZF<CR>
 
 " UI
 colorscheme apprentice
