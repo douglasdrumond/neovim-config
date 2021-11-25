@@ -147,3 +147,7 @@ set tabstop=2 shiftwidth=2 expandtab softtabstop=2   "tabs = 2 spaces
 set nowritebackup
 set noswapfile
 set nobackup
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
