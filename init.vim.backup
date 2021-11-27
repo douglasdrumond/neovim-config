@@ -6,7 +6,7 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 " Color scheme
-call minpac#add('romainl/Apprentice')
+"call minpac#add('romainl/Apprentice')
 "'srcery-colors/srcery-vim'
 
 call minpac#add('vim-airline/vim-airline')
