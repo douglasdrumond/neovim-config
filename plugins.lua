@@ -138,6 +138,9 @@ return require("packer").startup({
 	{ "winston0410/cmd-parser.nvim" },
       },
     })
+
+    use({ "filipdutescu/renamer.nvim", config = get_setup("renamer") })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
