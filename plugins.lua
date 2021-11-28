@@ -135,7 +135,7 @@ return require("packer").startup({
     use({
       "winston0410/range-highlight.nvim",
       requires = {
-	{ "winston0410/cmd-parser.nvim" },
+        { "winston0410/cmd-parser.nvim" },
       },
     })
 
