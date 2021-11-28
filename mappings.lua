@@ -8,7 +8,22 @@ end
 
 -- Nvim Tree
 map("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
-map("n", "<leader>u", ":NvimTreeFindFile<CR>", { silent = true })
+map("n", "<leader>p", ":NvimTreeFindFile<CR>", { silent = true })
+
+-- Switch Session
+map("n", "<Leader>1", ":Telescope sessions [save_current=true]<CR>")
+
+-- Update Plugins
+map("n", "<Leader>u", ":PackerSync<CR>")
+
+-- Open nvimrc file
+map("n", "<Leader>v", "<cmd>e $MYVIMRC<CR>")
+
+-- Source nvimrc file
+map("n", "<Leader>sv", ":luafile %<CR>")
+
+-- Quick new file
+map("n", "<Leader>n", "<cmd>enew<CR>")
 
 -- Easy select all of file
 map("n", "<Leader>sa", "ggVG<c-$>")

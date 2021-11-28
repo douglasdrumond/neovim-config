@@ -141,6 +141,9 @@ return require("packer").startup({
 
     use({ "filipdutescu/renamer.nvim", config = get_setup("renamer") })
 
+    use({ "Shatur/neovim-session-manager", config = get_setup("session") })
+    use({ "goolord/alpha-nvim", config = get_setup("alpha") })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
