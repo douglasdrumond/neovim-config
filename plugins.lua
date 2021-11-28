@@ -75,6 +75,26 @@ return require("packer").startup({
     -- Rainbow parentheses
     use("p00f/nvim-ts-rainbow")
 
+    -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more
+    use({ "jose-elias-alvarez/null-ls.nvim", config = get_setup("null-ls") })
+    -- LSP Configuration
+    use({ "neovim/nvim-lspconfig", config = get_setup("lsp") })
+
+    use({ "onsails/lspkind-nvim", requires = { { "famiu/bufdelete.nvim" } } })
+
+    use({
+      "hrsh7th/nvim-cmp",
+      requires = {
+        { "hrsh7th/cmp-nvim-lsp" },
+        { "hrsh7th/cmp-buffer" },
+        { "hrsh7th/cmp-path" },
+        { "hrsh7th/cmp-cmdline" },
+        { "hrsh7th/cmp-vsnip" },
+        { "f3fora/cmp-spell", { "hrsh7th/cmp-calc" }, { "hrsh7th/cmp-emoji" } },
+      },
+      config = get_setup("cmp"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
