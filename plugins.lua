@@ -64,6 +64,14 @@ return require("packer").startup({
       config = get_setup("tree"),
     })
 
+    -- Super fast git decorations
+    use({
+      "lewis6991/gitsigns.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+      event = "BufReadPre",
+      config = get_setup("gitsigns"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
