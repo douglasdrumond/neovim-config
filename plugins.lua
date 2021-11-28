@@ -60,7 +60,7 @@ return require("packer").startup({
     -- File explorer
     use({
       "kyazdani42/nvim-tree.lua",
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+      requires = { "kyazdani42/nvim-web-devicons", opt = true },
       config = get_setup("tree"),
     })
 
@@ -103,6 +103,19 @@ return require("packer").startup({
       config = get_setup("comment"),
     })
 
+    -- Extendable fuzzy finder
+    use({
+      "nvim-telescope/telescope.nvim",
+      module = "telescope",
+      cmd = "Telescope",
+      requires = {
+        { "nvim-lua/popup.nvim" },
+        { "nvim-lua/plenary.nvim" },
+        { "nvim-telescope/telescope-fzy-native.nvim" },
+      },
+      config = get_setup("telescope"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
@@ -119,4 +132,3 @@ return require("packer").startup({
     },
   },
 })
-
