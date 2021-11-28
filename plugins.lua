@@ -33,6 +33,7 @@ return require("packer").startup({
     use("wbthomason/packer.nvim")
 
     -- Add other packages
+    use({ "nathom/filetype.nvim", config = get_setup("filetype") })
 
     -- End (Add other packages)
 
