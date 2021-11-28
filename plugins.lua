@@ -132,6 +132,12 @@ return require("packer").startup({
       config = get_setup("outline"),
     })
 
+    use({
+      "winston0410/range-highlight.nvim",
+      requires = {
+	{ "winston0410/cmd-parser.nvim" },
+      },
+    })
     -- End (Add other packages)
 
     if packer_bootstrap then
