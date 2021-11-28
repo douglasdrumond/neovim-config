@@ -57,6 +57,13 @@ return require("packer").startup({
       run = ":TSUpdate",
     })
 
+    -- File explorer
+    use({
+      "kyazdani42/nvim-tree.lua",
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+      config = get_setup("tree"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
