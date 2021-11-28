@@ -50,6 +50,13 @@ return require("packer").startup({
       requires = { "kyazdani42/nvim-web-devicons", opt = true },
     })
 
+    -- Post-install/update hook with neovim command
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      config = get_setup("treesitter"),
+      run = ":TSUpdate",
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
