@@ -35,6 +35,11 @@ return require("packer").startup({
     -- Add other packages
     use({ "nathom/filetype.nvim", config = get_setup("filetype") })
     use({ "EdenEast/nightfox.nvim", config = get_setup("nightfox") })
+    use({
+      "norcalli/nvim-colorizer.lua",
+      event = "BufReadPre",
+      config = get_setup("colorizer"),
+    })
 
     -- for lualine
     use({ "kyazdani42/nvim-web-devicons" })
