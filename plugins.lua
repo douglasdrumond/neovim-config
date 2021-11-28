@@ -126,6 +126,12 @@ return require("packer").startup({
       config = get_setup("hop"),
     })
 
+    use({
+      "simrat39/symbols-outline.nvim",
+      cmd = { "SymbolsOutline" },
+      config = get_setup("outline"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
