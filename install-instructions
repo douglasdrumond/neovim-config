@@ -1,6 +1,0 @@
-asdf install nodejs 17.1.0
-asdf global nodejs 17.1.0
-
-npm i -g vscode-langservers-extracted
-npm install -g typescript typescript-language-server
-
