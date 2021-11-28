@@ -1,9 +1,24 @@
 # neovim-config
 
-## Use minpac to manage plugins
+## Pre-reqs
+
+First, install [Packer](https://github.com/wbthomason/packer.nvim)
 
 ```
-mkdir -p ~/.config/nvim/pack/minpac/opt
-cd ~/.config/nvim/pack/minpac/opt
-git clone https://github.com/k-takata/minpac.git
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Install language servers
+```
+npm i -g vscode-langservers-extracted
+npm install -g typescript typescript-language-server
+```
+
+## Troubleshoot
+
+### Nodejs
+```
+asdf install nodejs 17.1.0
+asdf global nodejs 17.1.0
 ```
