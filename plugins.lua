@@ -72,6 +72,9 @@ return require("packer").startup({
       config = get_setup("gitsigns"),
     })
 
+    -- Rainbow parentheses
+    use("p00f/nvim-ts-rainbow")
+
     -- End (Add other packages)
 
     if packer_bootstrap then
