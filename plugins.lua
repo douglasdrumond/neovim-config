@@ -95,6 +95,14 @@ return require("packer").startup({
       config = get_setup("cmp"),
     })
 
+    -- Commenting
+    use({
+      "numToStr/Comment.nvim",
+      opt = true,
+      keys = { "gc", "gcc" },
+      config = get_setup("comment"),
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
