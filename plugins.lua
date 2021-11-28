@@ -116,6 +116,9 @@ return require("packer").startup({
       config = get_setup("telescope"),
     })
 
+    -- Neovim plugin to stabilize buffer content on window open/close events.
+    use({ "luukvbaal/stabilize.nvim", config = get_setup("stabilize") })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
