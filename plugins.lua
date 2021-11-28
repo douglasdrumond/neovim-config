@@ -36,6 +36,15 @@ return require("packer").startup({
     use({ "nathom/filetype.nvim", config = get_setup("filetype") })
     use({ "EdenEast/nightfox.nvim", config = get_setup("nightfox") })
 
+    -- for lualine
+    use({ "kyazdani42/nvim-web-devicons" })
+    use({
+      "nvim-lualine/lualine.nvim",
+      config = get_setup("lualine"),
+      event = "VimEnter",
+      requires = { "kyazdani42/nvim-web-devicons", opt = true },
+    })
+
     -- End (Add other packages)
 
     if packer_bootstrap then
