@@ -15,6 +15,11 @@ npm i -g vscode-langservers-extracted
 npm install -g typescript typescript-language-server
 ```
 
+Install `stylua`
+```
+cargo install stylua
+```
+
 ## Post-install
 
 1. Inside Neovim, run `:PackerCompile` and `:PackerInstall`.
@@ -27,4 +32,11 @@ npm install -g typescript typescript-language-server
 ```
 asdf install nodejs 17.1.0
 asdf global nodejs 17.1.0
+```
+
+### Rust
+
+#### WSL
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
