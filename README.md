@@ -20,6 +20,11 @@ Install `stylua`
 cargo install stylua
 ```
 
+Install `prettier`
+```
+npm install -g prettier
+```
+
 ## Post-install
 
 1. Inside Neovim, run `:PackerCompile` and `:PackerInstall`.
