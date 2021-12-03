@@ -39,6 +39,12 @@ asdf install nodejs 17.1.0
 asdf global nodejs 17.1.0
 ```
 
+### `prettier` is not in PATH
+
+```
+export PATH="$(dirname $(dirname $(npm root -g)))/bin:$PATH"
+```
+
 ### Rust
 
 #### WSL
