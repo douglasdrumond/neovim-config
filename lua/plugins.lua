@@ -144,6 +144,8 @@ return require("packer").startup({
     use({ "Shatur/neovim-session-manager", config = get_setup("session") })
     use({ "goolord/alpha-nvim", config = get_setup("alpha") })
 
+    use({ "godlygeek/tabular" })
+
     use({ "github/copilot.vim" })
 
     -- End (Add other packages)
