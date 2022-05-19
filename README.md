@@ -2,6 +2,12 @@
 
 ## Pre-reqs
 
+Zeroth, install Neovim
+
+```
+brew install --HEAD neovim
+```
+
 First, install [Packer](https://github.com/wbthomason/packer.nvim)
 
 ```
